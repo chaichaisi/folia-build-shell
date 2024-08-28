@@ -32,5 +32,6 @@ cd /
 git clone https://github.com/chaichaisi/folia-build-shell.git
 cd folia-build-shell
 chmod +x build.sh
+sed -i 's/\r$//' build.sh
 ./build.sh
 ```
