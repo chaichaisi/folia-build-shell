@@ -22,8 +22,12 @@ This is a semi-automatic, one-click compilation script for the multi-threaded op
 ## Use
 Need Bash!!!!!!
 For Google Cloud Shell
+First
 ```
 sudo -i
+```
+Then
+```
 cd /
 git clone https://github.com/chaichaisi/folia-build-shell.git
 cd folia-build-shell
