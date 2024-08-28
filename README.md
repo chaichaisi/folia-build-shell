@@ -24,6 +24,7 @@ Need Bash!!!!!!
 For Google Cloud Shell
 ```
 sudo -i
+cd /
 git clone https://github.com/chaichaisi/folia-build-shell.git
 cd folia-build-shell
 chmod +x build.sh
