@@ -1,10 +1,4 @@
 
-
-<div align="center">
-  <a href="https://github.com/chaichaisi/folia-build-shell"><img src="https://q.qlogo.cn/g?b=qq&nk=3023425570&s=640" width="640" height="640" alt="Logo"></a>
-  <br>
-</div>
-
 <div align="center">
 
 # folia-build-shell
