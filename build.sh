@@ -24,6 +24,7 @@ sudo rm -rf ~/Folia
 sudo rm -rf /Folia
 sudo rm -rf ~/.gradle/
 rm -rf ~/.gradle/
+mynameis=$(id -nu 1000)
 
 echo -e "${BLUE}------------------------------------------------------------------------------------------${RES}"
 echo -e "Folia 是 Paper 的一个分支,由 Minecraft 优化 BOSS Spottedleaf 开发。有多线程优化"
@@ -79,14 +80,14 @@ else
     echo -e ":("
     exit 1
 fi
-echo -e "自动为您切换到编译完产物目录，我们会为您全部移动到主目录！目录为/home"
-sudo cp ./build/libs/*.jar /home/
-echo '大获全胜！已经结束，请单击右上角三点选择下载，展开/home的文件，选择您编译的Folia核心文件并下载，届时您可以享受原汁原味的Folia核心带来的性能提升！'
+echo -e "自动为您切换到编译完产物目录，我们会为您全部移动到主目录！"
+sudo cp ./build/libs/*.jar /home/${mynameis}/
+echo '大获全胜！已经结束，请单击右上角三点选择下载，展开文件，选择您编译的Folia核心文件并下载，届时您可以享受原汁原味的Folia核心带来的性能提升！'
 echo "项目地址 https://github.com/chaichaisi/folia-build-shell 能给个Star嘛"
 sleep 1
 echo 'Done！ :)'
 echo "Folia更多详情咨询：https://papermc.io/software/folia"
 echo "https://yizhan.wiki/NitWikit/Java/advance/folia/"
-cd /home
-sudo ls -luah /home
+cd ~
+sudo ls -luah ~
 exit 0
