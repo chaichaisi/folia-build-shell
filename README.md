@@ -17,16 +17,18 @@ _✨ 高效，快速的Folia核心端编译脚本！ ✨_
 
 </div>
 
-## folia-build-shell
+## Folia-build-shell
 This is a semi-automatic, one-click compilation script for the multi-threaded optimized Minecraft Folia server 这是一个半自动一键编译多线程优化的我的世界Folia服务端的编译脚本
 ## Use
 Need Bash!!!!!! 
-For Google Cloud Shell 考虑到国内网络环境，脚本只适用于于谷歌云命令行编译！请自行准备霍格沃兹魔法环境和谷歌账号！ 
-First 首先 
+For Google Cloud Shell 
+考虑到国内网络环境，脚本只适用于于谷歌云命令行编译！请自行准备霍格沃兹魔法环境和谷歌账号以及Github用户名和邮箱！ 
+本程序不会保存您的个人信息！
+First 首先进入谷歌云命令行终端输入以下命令回车
 ```
 sudo -i
 ```
-Then 然后 
+Then 然后黏贴以下代码回车即可
 ```
 cd /
 git clone https://github.com/chaichaisi/folia-build-shell.git
@@ -34,3 +36,5 @@ cd folia-build-shell
 chmod +x build.sh
 ./build.sh
 ```
+教程视频：
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113041056203652&bvid=BV1b4sgeaEtx&cid=25628510022&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
