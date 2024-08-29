@@ -22,7 +22,7 @@ This is a semi-automatic, one-click compilation script for the multi-threaded op
 ## Use  
 Need Bash!!!!!!  
 For Google Cloud Shell  
-考虑到国内网络环境，脚本只适用于于谷歌云命令行编译！请自行准备霍格沃兹魔法环境和谷歌账号以及Github用户名和邮箱！  
+考虑到国内网络环境，脚本只适用于于谷歌云命令行云编译！请自行准备霍格沃兹魔法环境和谷歌账号以及Github用户名和邮箱！  
 
 相对于自行本地电脑编译，时间漫长（普遍在4个小时左右编译好）不说，还会扰乱了系统环境（东一个java西一个java），考虑到大家并不是人人都有一台屌炸天的电脑和稳定的霍格沃兹魔法环境，使用本地编译大多是不幸的！  
 
