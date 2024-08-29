@@ -42,7 +42,7 @@ if [ "$setupmode" = 'n' ] || [ "$setupmode" = 'N' ]; then
 fi
 echo -e "${RED}你${RES}${GREEN}真${RES}${PINK}的${RES}${YELLOW}准${RES}${BLUE}备${RES}${RED}好${RES}${BLUE}了${RES}${PINK}吗${RES}？[Y/n]:"
 read setupmode_realy
-if [ "$setupmode" = 'n' ] || [ "$setupmode" = 'N' ]; then
+if [ "$setupmode_realy" = 'n' ] || [ "$setupmode_realy" = 'N' ]; then
     echo -e "用户拒绝，正在退出，请重新运行脚本，执行到上一步时请输入y或者Y同意运行！"
     sleep 3
     exit 0
