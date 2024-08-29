@@ -38,11 +38,11 @@ For Google Cloud Shell
 
 本程序不会保存您的个人信息！  
 
-First 首先新标签页打开这个 [谷歌云命令行终端](https://shell.cloud.google.com/?hl=zh_CN&fromcloudshell=true&show=terminal) 并输入以下命令回车  
+First 首先新标签页打开这个 [谷歌云命令行终端](https://shell.cloud.google.com/?hl=zh_CN&fromcloudshell=true&show=terminal) 登陆你的谷歌账号进入终端并输入以下命令回车  
 ```
 sudo -i
 ```
-Then 然后黏贴以下代码回车即可开始编译，快开始需要按照提示输入Github用户名和邮箱！  
+Then 然后黏贴以下代码回车即可开始编译，快开始需要按照提示输入Github用户名和邮箱  
 ```
 cd /
 git clone https://github.com/chaichaisi/folia-build-shell.git
