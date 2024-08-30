@@ -18,7 +18,8 @@ _✨ 高效，快速的Folia核心端编译脚本！ ✨_
 </div>
 
 ## Folia-build-shell  
-This is a semi-automatic, one-click compilation script for the multi-threaded optimized Minecraft Folia server 这是一个半自动一键编译多线程优化的我的世界Folia服务端的编译脚本  
+这是一个半自动一键编译多线程优化的我的世界Folia服务端的编译脚本  
+This is a semi-automatic, one-click compilation script for the multi-threaded optimized Minecraft Folia server  
 ## Use  
 Need Bash!!!!!!  
 For Google Cloud Shell  
