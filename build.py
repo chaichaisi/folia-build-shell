@@ -36,6 +36,8 @@ def main():
     remove_if_exists(os.path.join(filepath, 'jdk-21_windows-x64_bin.zip'))
     remove_if_exists(os.path.join(filepath, 'Folia'))
     remove_if_exists(os.path.join(filepath, 'gradle'))
+    remove_if_exists(os.path.join(filepath, '.gradle'))
+    remove_if_exists(os.path.join(filepath, '~', '.gradle'))
     
     print(f"{BLUE}------------------------------------------------------------------------------------------{RES}")
     print("Folia 是 Paper 的一个分支,由 Minecraft 优化 BOSS Spottedleaf 开发。有多线程优化")
@@ -72,16 +74,18 @@ def main():
     jdk_url = "https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.zip"
     jdk_zip_path = os.path.join(filepath, 'jdk-21_windows-x64_bin.zip')
     run_command(f'curl -o "{jdk_zip_path}" {jdk_url}')
-    run_command(f'powershell -command "Expand-Archive -Path {jdk_zip_path} -DestinationPath {filepath}\\jdk-21"')
+    run_command(f'powershell -command "Expand-Archive -Path {jdk_zip_path} -DestinationPath {filepath}" -Force')
     
     # 设置 JAVA_HOME 环境变量
-    java_home = os.path.join(filepath, 'jdk-21')
+    java_home = os.path.join(filepath, 'jdk-21.0.4')
     os.environ["JAVA_HOME"] = java_home
     os.environ["PATH"] = f"{java_home}\\bin;" + os.environ["PATH"]
 
     # 克隆 Folia 源码并编译
     run_command(f'git clone https://github.com/PaperMC/Folia.git "{os.path.join(filepath, "Folia")}"')
     os.chdir(os.path.join(filepath, "Folia"))
+    run_command('mkdir .\build')
+    run_command('mkdir .\build\libs')
     run_command('.\gradlew applyPatches')
     run_command('.\gradlew createMojmapBundlerJar')
     
