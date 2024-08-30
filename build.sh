@@ -88,6 +88,6 @@ sleep 1
 echo 'Done！ :)'
 echo "Folia更多详情咨询：https://papermc.io/software/folia"
 echo "https://yizhan.wiki/NitWikit/Java/advance/folia/"
-cd ~
-sudo ls -luah ~
+cd /home/${mynameis}/
+sudo ls -luah /home/${mynameis}/
 exit 0
