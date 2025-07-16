@@ -68,7 +68,7 @@ JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64/
 sudo git clone https://github.com/PaperMC/Folia.git
 cd Folia/
 sudo chmod 777 * -R
-sudo ./gradlew applyPatches
+sudo ./gradlew applyAllPatches
 sudo ./gradlew createMojmapBundlerJar
 if ls ./build/libs/*.jar >/dev/null 2>&1; then
     echo "文件夹中有 .jar 文件。真棒！它没问题！"
