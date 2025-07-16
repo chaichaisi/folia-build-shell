@@ -86,7 +86,7 @@ def main():
     os.chdir(os.path.join(filepath, "Folia"))
     run_command('mkdir .\build')
     run_command('mkdir .\build\libs')
-    run_command('.\gradlew applyPatches')
+    run_command('.\gradlew applyAllPatches')
     run_command('.\gradlew createMojmapBundlerJar')
     
     jar_files = [f for f in os.listdir(os.path.join(filepath, 'Folia', 'build', 'libs')) if f.endswith('.jar')]
